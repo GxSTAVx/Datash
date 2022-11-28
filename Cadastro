@@ -1,0 +1,80 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="logo">
+     <img src="https://i.imgur.com/35HJz7e.png" id="logo"> 
+    </div>
+    <div>
+      <form class="login">
+        <div class="input_area">
+          <input class="input" type="text" placeholder="E-mail">
+		  <input class="input" type="text" placeholder="CNPJ">
+		  <input class="input" type="text" placeholder="Senha">
+          <input class="input" type="password" placeholder="Confirme a senha">
+          <button class="button">Cadastrar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+
+</html>
+
+CSS
+
+body{
+	font-family: Arial, sans serif;
+	background-color: rgb(50, 207, 92);
+}
+
+.login{
+	width: 250px;
+	height: auto;
+    padding: 30px;
+	border-radius: 5px;
+	border: solid 2px;
+	border-color: rgba(16, 16, 14, 0.125);
+	background-color: white;
+	justify-content: center;
+	align-items: center;
+	margin-top: 300px;
+	display: flex;
+	margin-left: 275px;
+}
+
+.input_area{
+	width: 100%;
+}
+
+.input{
+	border-color: rgba(16, 16, 14, 0.125);
+	border-radius: 5px;
+	display: flex;
+	width: 100% !important;
+	margin: 10px 0px 10px 0px;
+	box-sizing: border-box;
+}
+
+.button{
+	border-color: rgba(16, 16, 14, 0.125);
+	border-radius: 5px;
+	background-color: rgb(14, 130, 45);
+	width: 100%;
+	color: rgb(255, 255, 255) !important;
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+
+.reminder{
+	font-size: 10px;
+	margin-bottom: 5px;
+	box-sizing: border-box;
+	float: right;
+}
+#logo{
+	width:20%;
+	height:20%;
+}
