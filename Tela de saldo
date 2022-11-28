@@ -1,0 +1,235 @@
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/ff59e6ce65.js" crossorigin="anonymous"></script>
+    <!-- Principal CSS do Bootstrap -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos customizados para esse template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+
+      <div id="barra_superior">
+        <div id="logo_sesc"><img src="https://i.imgur.com/35HJz7e.png" alt="Sesc PR" /></div>
+        <span id="topbar_text">Datash</span>
+        <div class="icons_topbar"><i class="fa-solid fa-wallet fa-2x"></i></div>
+        <div class="icons_topbar"><i class="fa-solid fa-chart-line fa-2x"></i></div>
+        <div class="icons_topbar"><i class="fa-solid fa-people-group fa-2x"></i></div>
+      </div>
+
+    </header>
+
+    <div class="content_image2">
+      <table summary="A nossa loja, Metal & Cia,  oferece uma grande variedade de instrumentos semi-novos em ótimo estado de conservação">
+        <thead>
+          <tr>
+            <th colspan="4">Gastos da empresa</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td colspan="4" id="final_row">Ganhos da empresa: $10.993,00</td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td class="description">Descrição</td>
+            <td class="description">Valor</td>
+          </tr>
+          <tr>
+            <td>Ganho 1</td>
+            <td>$743,00</td>
+          </tr>
+		  <tr>
+            <td>Ganho 2</td>
+            <td>$6900,00</td>
+          </tr>
+          <tr>
+            <td>Ganhos 3</td>
+            <td>$800,00</td>
+          </tr>
+		  <tr>
+            <td>Ganhos 4</td>
+            <td>$2550,00</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+	
+	    <div class="content_image1">
+      <table summary="A nossa loja, Metal & Cia,  oferece uma grande variedade de instrumentos semi-novos em ótimo estado de conservação">
+        <thead>
+          <tr>
+            <th colspan="4">Gastos da empresa</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td colspan="4" class="final_row">Gastos totais: $7.629,00</td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td class="description">Descrição</td>
+            <td class="description">Valor</td>
+          </tr>
+          <tr>
+            <td>Gasto 1</td>
+            <td>$640,00</td>
+          </tr>
+		  <tr>
+            <td>Gasto 2</td>
+            <td>$6689,00</td>
+          </tr>
+          <tr>
+            <td>Gasto 3</td>
+            <td>$300,00</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+	<span class="saldo_total"> Saldo Total: $3.394,00</span>
+  </body>
+
+</html>
+
+CSS
+
+body{
+	font-family: Arial;
+}
+
+/* BARRA SUPERIOR */
+
+#barra_superior {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background-color: rgb(50, 207, 92);
+  vertical-align: middle;
+}
+
+#logo_sesc {
+  display: inline-block;
+  position: relative;
+  margin-top: 8px;
+  margin-left: 30px;
+}
+
+#logo_sesc img {
+  width: 100px;
+  height: 48px;
+  color: rgb(255, 255, 255);
+  vertical-align: middle;
+  font-size: 21.642px;
+
+}
+
+#topbar_text {
+  color: rgb(255, 255, 255);
+  padding-left: 32px;
+  padding-right: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-family: Mulish, sans-serif;
+  line-height: 1.125;
+  font-size: 1.25rem;
+  text-decoration-color: rgb(255, 255, 255);
+  vertical-align: middle;
+}
+
+.icons_topbar {
+  float: right;
+  margin-right: 75px;
+  margin-top: 15px;
+}
+
+.icons_topbar i {
+  color: rgb(14, 130, 45);
+}
+
+.content_image1 {
+  width: 100%;
+  height: auto;
+  margin-top: -238px;
+  margin-left: 40px;
+}
+
+.content_image2 {
+	width: 100%;
+  height: auto;
+  margin-top: 80px;
+  margin-left: 400px;
+}
+
+/* TABELA */
+
+table,
+td,
+th,
+tfoot {
+  border: solid 1px #000;
+  padding: 5px;
+  border-color: rgb(14, 130, 45);
+}
+
+table {
+  border-radius: 10px;
+}
+
+th {
+  background-color: rgb(14, 130, 45);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+caption {
+  font-size: x-large;
+}
+
+tr{
+	border-top-color: rbg(255, 255, 255);
+	border-bottom-color: rbg(255, 255, 255);
+}
+
+colgroup {
+  background: #F60;
+}
+
+.coluna1 {
+  background: #F66;
+}
+
+.coluna2 {
+  background: #F33;
+}
+
+.coluna3 {
+  background: #F99;
+}
+
+.description {
+  width: 150px;
+}
+
+.final_row {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.saldo_total{
+	margin-left: 50px;
+	margin-top: 400px;
+}
