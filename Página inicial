@@ -1,0 +1,121 @@
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/ff59e6ce65.js" crossorigin="anonymous"></script>
+    <!-- Principal CSS do Bootstrap -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos customizados para esse template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    <header>
+
+      <div id="barra_superior">
+          <div id="logo_sesc"><img src="https://i.imgur.com/35HJz7e.png" alt="Sesc PR" /></div>
+          <span id="topbar_text">Datash</span>
+        </div>
+
+    </header>
+    
+    <table id="icones">
+      <tr>
+        <td class="icons"> <img src="https://images-ext-1.discordapp.net/external/-4T9YYMOQU0SfiTiRTA6btZcXgM4Hbm06eDRUHwb2yY/https/i.imgur.com/y3rZ1CA.png" id="logo"> </td>
+        <td class="icons"><i class="fa-solid fa-wallet fa-8x"></i><p>Saldo</p></td>
+      </tr>
+      <tr>
+        <td class="icons"><i class="fa-solid fa-chart-line fa-8x"></i><p>Gráficos</p></td>
+        <td class="icons"><i class="fa-solid fa-people-group fa-8x"></i><p>Salário</p></td>
+      </tr>  
+    </table>
+  </body>
+  
+  CSS 
+  
+  #barra_superior{
+	display: block;
+	position: fixed;
+  width: 100%;
+	top: 0;
+	left: 0;
+    right: 0;
+    height: 64px;
+    background-color: rgb(50, 207, 92);
+	vertical-align: middle;
+}
+
+#logo_sesc{
+	display: inline-block;
+	position: relative;
+	margin-top: 8px;
+	margin-left: 250px;
+}
+
+#logo_sesc img{
+	width: 100px;
+	height: 48px;
+	color: rgb(255, 255, 255);
+	vertical-align: middle;
+	font-size: 21.642px;
+	
+}
+
+#topbar_text{
+	color: rgb(255, 255, 255);
+	padding-left: 32px;
+	padding-right: 16px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	font-family: Mulish, sans-serif;
+	line-height: 1.125;
+	font-size: 1.25rem;
+	text-decoration-color: rgb(255, 255, 255);
+	text-align: center;
+}
+
+.icons_topbar{
+	float: right;
+	margin-right: 75px;
+	margin-top: 15px;
+}
+
+.icons_topbar i{
+	color: rgb(14, 130, 45);
+}
+
+.selector{
+	width: 10px;
+	height: 1px;
+	background-color: white;
+	position: relative;
+	bottom: 20px;
+}
+
+#icones{
+  position: relative;
+  top: 80px;
+  left: 50px;
+  align-content: center;
+  
+}
+#icones tr, td{
+  width: 200px;
+  height: 200px;
+  
+    border-collapse: collapse;
+
+}
+
+#icones td{
+  padding: 15px 30px;
+}
+
+
+
+.icons{
+  text-align: center;
+}
